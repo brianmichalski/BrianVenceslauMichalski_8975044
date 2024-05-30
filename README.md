@@ -1,1 +1,5 @@
-# Seng8041-Lab3
+Your name: Brian Venceslau Michalski
+
+Project Title: Lab 3
+
+Student ID: 8975044
