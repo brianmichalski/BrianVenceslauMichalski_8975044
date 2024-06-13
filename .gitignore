@@ -4,3 +4,7 @@ __pycache__/test_plane_geometry.cpython-310-pytest-8.2.2.pyc
 __pycache__/calculator.cpython-310.pyc
 __pycache__/integration_test.cpython-310-pytest-8.2.2.pyc
 __pycache__/plane_geometry_test.cpython-310-pytest-8.2.2.pyc
+integration/__pycache__/calculator.cpython-312.pyc
+integration/__pycache__/integration_test.cpython-312-pytest-8.2.2.pyc
+integration/__pycache__/plane_geometry_test.cpython-312-pytest-8.2.2.pyc
+integration/__pycache__/plane_geometry.cpython-312.pyc
