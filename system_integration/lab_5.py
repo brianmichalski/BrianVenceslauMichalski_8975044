@@ -42,30 +42,34 @@ add_to_cart_button.click()
 # Waiting for the cart to update
 time.sleep(5)
 
-# Clicking on no thanks button
-NO_THANKS_XPATH = "//*[@id=\"attachSiNoCoverage\"]/span/input"
-no_thanks_button = driver.find_element(By.XPATH, NO_THANKS_XPATH)
+# clicking on "no thanks" button
+no_thanks_button = driver.find_element(By.XPATH, "//*[@id=\"attachSiNoCoverage\"]/span/input")
+
+# if "no thanks" button were not present, skip it
 if (no_thanks_button):
     no_thanks_button.click()
     time.sleep(2)
 
-# proceed_to_checkout= driver.find_element("xpath","/html/body/div[1]/div[1]/div/div[1]/div[2]/div/div[3]/div/div[1]/form/span/span/span/input")
+# proceed_to_checkout
 proceed_to_checkout= driver.find_element(By.NAME, "proceedToRetailCheckout")
 proceed_to_checkout.click()
+
+# waiting for sign-in form to load
 time.sleep(4)
 
+# Submitting the email
 email_input = driver.find_element(By.ID, "ap_email")
 email_input.send_keys("brian.class@gmail.com")
-
-# Submitting the email
 email_input.send_keys(Keys.RETURN)
-time.sleep(2)
 
-sigin_button = driver.find_element(By.ID, "signInSubmit")
+# waiting for password form to load and to be manually filled
 time.sleep(10)
 
-# Clicking the sig-in button
+# clicking the sig-in button
+sigin_button = driver.find_element(By.ID, "signInSubmit")
 sigin_button.click()
+
+# waiting for OTP form to load and to be manually filled
 time.sleep(10)
 
 # Verifying that the laptop has been added to the cart
